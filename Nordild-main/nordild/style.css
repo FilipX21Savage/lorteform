@@ -1,0 +1,203 @@
+
+
+.container, .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.carousel-caption {
+	position: absolute;
+	top:0;
+	bottom:0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 50px;
+	font-weight: 300;
+	text-align: left;
+}
+.so-me a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    color: #313131;
+    background: #FFFFFF;
+    margin: 0 6px;
+    border-radius: 50%; 
+    justify-content: center;
+    align-items: center; 
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 22px;
+   
+}
+
+/* Ikoner inde i cirkel, hvor hurtigt de skal rotate nÃ¥r man hover */ 
+.so-me a i{
+    transition: 0.4s all; 
+}
+
+/* Hvordan ikonerne rotatere */
+.so-me a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #304a5f;
+    margin-bottom: 0;
+}
+.top-text {
+    font-size: 32px;
+    font-weight: 300; 
+}
+/* Form */
+.registerForm input[type="submit"]{
+	width: 50%;
+    background: #e6007e;
+    margin-top: 10px;
+    border-radius: 0;
+	padding: 15px 5px;
+	font-weight:bold;
+	font-size:20px;
+	color:white;
+}
+/*Style af inputfelter*/
+input[type="text"], input[type="email"] {
+	padding: 10px 0;
+	width: 100%;
+	border:none;
+	border-bottom: 1px solid #304a5f;
+}
+input:focus {
+	outline:none;
+}
+form div {
+	position: relative;
+}
+form div label {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	pointer-events: none;
+	color: #304a5f;	
+	z-index:1000;
+}
+.form-control{
+	border-radius: 0;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid, .form-control.is-valid, .was-validated .form-control:valid {
+	border-color: #e6007e;	
+}
+.invalid-feedback {
+	color: #e6007e;
+}
+
+
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus,.form-control.is-valid:focus, .was-validated .form-control:valid:focus  {
+	box-shadow: none;
+	border-color: #e6007e;
+}
+.btn.focus, .btn:focus {
+	box-shadow: none;
+}
+.registerForm .form-control:focus{
+	box-shadow:none;
+	border-color: #e6007e;
+}
+input:focus ~ label, input:valid ~ label{
+	top: 10px;
+	left: 0px;
+	font-size: 0.8em;
+	transition: .3s ease-out;
+}
+input:focus, input:valid {
+	border-bottom: 2px solid #e6007e;
+}
+/*Checkbox*/
+
+/* Customize the label (the container) */
+.checkbox-container {
+	display: block;
+	position: relative;
+	padding-left: 55px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-top: 20px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 40px;
+	background-color: #ffffff;
+	border: 1px solid black;
+  }
+  
+  .checkbox-label-div{
+	  margin-left:45px;
+	  font-size:14px;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkmark {
+	background-color: #e6007e;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+
+.Von{
+    background-color: #2a697b
+}
+.midtekst{
+    color: #fff;
+    font-size: 26px;    
+    text-align: center;
+    font-weight: 300;
+}
+
+footer{
+    background-color: #313131;
+}
+
+.footertxt{
+    font-weight: 700;
+    color:#FFFFFF;
+    font-size: 14px;
+}
